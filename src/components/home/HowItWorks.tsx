@@ -6,6 +6,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import CarouselComponent from "../ui/CarouselComponent";
+import Image from "next/image";
 
 const applicationProcess = [
   {
@@ -70,7 +71,8 @@ const HowItWorks = () => {
                 " w-[60px] min-h-[60px] bg-[#303030] rounded-full flex items-center justify-center text-white"
               )}
             >
-              <Lightbulb color="white" />
+              <Image src={`/assets/icons/how${index+1}.svg`} alt="how it works icon" width={36} height={36} />
+
             </p>
             <div className=" flex flex-col gap-4 ">
               <h3 className=" font-semibold text-[20px] ">{content.stage} </h3>
