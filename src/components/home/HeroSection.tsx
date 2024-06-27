@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import CarouselComponent from "../ui/CarouselComponent";
 
 const sectionData = [
   {
@@ -27,10 +28,17 @@ const sectionData = [
 
 const HeroSection = () => {
   return (
-    <div className=" flex w-full items-center justify-center ">
-        {sectionData.map((content, index) => (
-          <div key={index} className=" flex w-[100dvw] items-center justify-center ">
-            <div className=" lg:w-[50%] pl-[120px] py-[80px] ">
+    <div className=" flex w-[100%] items-center justify-center max-h-[500px] overflow-scroll ">
+      <CarouselComponent
+        autoSlide
+        autoSlideInterval={3000}
+        showButton={false}
+        items={sectionData.map((content, index) => (
+          <div
+            key={index}
+            className=" flex w-full items-center justify-center "
+          >
+            <div className=" lg:w-[50%] lg:pl-[120px] py-[80px] ">
               <div className="flex flex-col gap-11 ">
                 <div className=" flex flex-col gap-3 max-w-[490px] w-full ">
                   <h4 className=" text-[24px] font-semibold ">
@@ -45,7 +53,7 @@ const HeroSection = () => {
             </div>
             <div className=" hidden lg:flex lg:w-[50%] w-full object-fill ">
               <Image
-              className=" w-full "
+                className=" w-full h-[500px] "
                 src={`/assets/images/${content.image}.png`}
                 alt="hero-section image"
                 width={600}
@@ -54,6 +62,7 @@ const HeroSection = () => {
             </div>
           </div>
         ))}
+      />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className=" sticky top-0 z-10 w-full flex items-center justify-center bg-[#F9F9F9]">
-      <div className=" w-full h-auto max-w-[1200px] flex justify-between items-center md:px-10 px-5 lg:pt-5 bg:pb-4 py-4 bg-[#F9F9F9] lg:gap-6  ">
+      <div className=" w-full h-auto lg:max-w-[90dvw] flex justify-between items-center md:px-10 px-5 lg:pt-5 bg:pb-4 py-4 bg-[#F9F9F9] lg:gap-6  ">
         <Link className=" relative z-30 " href={"/home"}>
           <CompanyLogo />
         </Link>

@@ -15,7 +15,7 @@ import Section2 from "@/components/home/Section2";
 
 const page = () => {
   return (
-    <div className=" flex flex-col gap-2 items-center justify-center  ">
+    <div className=" flex w-full overflow-hidden flex-col gap-2 items-center justify-center  ">
       <HeroSection />
       <Section2 />
       <NetworkOfBuildersSection />

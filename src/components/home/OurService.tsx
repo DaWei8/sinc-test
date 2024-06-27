@@ -1,4 +1,5 @@
 import { LucideTriangle } from "lucide-react";
+import Image from "next/image";
 
 const sectionData = [
   "Most early-stage companies and pre-product startups cannot afford professional services especially those who dont have family and friends network that can support",
@@ -42,7 +43,13 @@ const OurService = () => {
               className=" p-6 gap-5 flex-col flex w-full max-w-[380px] bg-white rounded-[12px] "
               key={index}
             >
-              <div className=" w-10 h-10 bg-[#f478b6] " />
+              <Image
+                src={`/assets/icons/poly${index + 1}.svg`}
+                alt="polygon"
+                width={40}
+                height={40}
+                className=" w-10 h-10 "
+              />
               <h3 className=" tracking-wide text-[17px] ">{content} </h3>
             </div>
           ))}
@@ -52,7 +59,8 @@ const OurService = () => {
         <div className=" flex flex-col gap-3 ">
           <h4 className=" text-[32px] font-[500] ">Case Study</h4>
           <p>
-          See what Service Incubators get, the maths behind Service Equity (SEEQ) and what the value of your share equity can be over time
+            See what Service Incubators get, the maths behind Service Equity
+            (SEEQ) and what the value of your share equity can be over time
           </p>
         </div>
         <div className=" flex flex-wrap gap-3 w-full">

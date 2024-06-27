@@ -96,8 +96,8 @@ const InvestorNetwork = () => {
           {deals.map((content, index) => (
             <div
               className={clsx(
-                " p-5 gap-3  flex-col flex w-[300px] border-r-[#212121] border-r border-solid  ",
-                index + 1 === deals.length && "border-r-0"
+                " p-5 gap-3 flex-col flex w-[300px] max-md:w-full border-r-[#212121] border-r border-solid max-md:border-x-0 max-md:border-t-2   ",
+                index + 1 === deals.length && "border-r-0 "
               )}
               key={index}
             >
@@ -147,12 +147,12 @@ const InvestorNetwork = () => {
             (Invest from $50k & above)
           </h1>
         </div>
-        <div className=" flex flex-wrap w-full justify-center border-x-0 border-[#212121] border border-solid  ">
+        <div className=" flex flex-wrap w-full justify-center border-x-0 border-[#212121] border border-solid max-md:border-none ">
           {advancedDeals.map((content, index) => (
             <div
               className={clsx(
-                " p-5 gap-3  flex-col flex w-[300px] border-r-[#212121] border-r border-solid  ",
-                index + 1 === deals.length && "border-r-0"
+                " p-5 gap-3 flex-col flex w-[300px] max-md:w-full border-r-[#212121] border-r border-solid max-md:border-x-0 max-md:border-t-2   ",
+                index + 1 === deals.length && "border-r-0 "
               )}
               key={index}
             >
@@ -193,7 +193,7 @@ const InvestorNetwork = () => {
               </div>
             </div>
           ))}
-          <div className=" px-5 py-[18px] gap-5  flex-col flex w-[280px] bg-[#212121] my-3 ml-5 ">
+          <div className=" px-5 py-[18px] gap-5 flex-col flex max-md:w-full w-[280px] bg-[#212121] my-3 ml-5 ">
             <h1 className=" text-[17px] text-white font-semibold ">
               Work with Service Incubators (SINC) to expedite your
               time to market

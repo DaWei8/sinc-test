@@ -2,7 +2,7 @@ import React from "react";
 
 const LetsBuild = () => {
   return (
-    <div className=" flex flex-col gap-10 items-center justify-center pt-[94px] pb-8 px-5 w-full ">
+    <div className=" flex flex-col gap-10 items-center justify-center pt-[94px] pb-28 px-5 w-full ">
       <h1 className=" lg:text-[80px] text-[36px] text-center ">
         Let&apos;s build companies that help everyone succeed
       </h1>

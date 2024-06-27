@@ -108,10 +108,10 @@ const Footer = () => {
               width={100}
               height={100}
             />
-            <div className=" w-full flex flex-col items-center ">
+            <div className=" w-full flex flex-col gap-3 items-center ">
               <Image
                 src={"/assets/icons/Whatsapp.svg"}
-                alt=" accredited A+"
+                alt=" whatsapp"
                 className="max-w-[60px] w-fit "
                 width={60}
                 height={60}
