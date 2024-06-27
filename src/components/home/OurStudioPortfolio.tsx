@@ -21,7 +21,7 @@ const OurStudioPortfolio = () => {
           >
             <Image
               className=" W-full max-h-[40px] "
-              src={`/assets/${index + 1}.svg`}
+              src={`/assets/logos/${index + 1}.svg`}
               alt="other company logo"
               width={60}
               height={40}

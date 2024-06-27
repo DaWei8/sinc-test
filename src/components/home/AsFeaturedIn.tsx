@@ -41,7 +41,7 @@ const AsFeaturedIn = () => {
               <div className=" w-full flex flex-col bg-white py-10 px-5 ">
                 <Image
                   className=" w-[150px] h-12 mb-4 "
-                  src={`/assets/${index + 1}.svg`}
+                  src={`/assets/logos/${index + 1}.svg`}
                   alt="featured in thumbnail"
                   width={622}
                   height={293}

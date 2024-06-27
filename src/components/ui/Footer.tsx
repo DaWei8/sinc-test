@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
           <div className=" flex gap-4 ">
             <Image
-              src={"/assets/accredited.svg"}
+              src={"/assets/logos/accredited.svg"}
               alt=" accredited A+"
               className=" w-full max-w-[150px] "
               width={100}
@@ -139,7 +139,7 @@ const Footer = () => {
         </div>
         <div className=" flex gap-4 max-md:flex-col max-md:items-center ">
           <Image
-            src={"/assets/logo2.svg"}
+            src={"/assets/logos/logo2.svg"}
             alt=" gauss business"
             className=" w-full max-w-[150px] "
             width={100}
@@ -154,7 +154,7 @@ const Footer = () => {
       <p className=" flex self-center gap-2 ">
         Web In Nigeria
         <Image
-          src={"/assets/twemoji_flag-nigeria.svg"}
+          src={"/assets/logos/twemoji_flag-nigeria.svg"}
           alt=" gauss business"
           className=" w-full max-w-[16px] "
           width={100}

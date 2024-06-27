@@ -62,7 +62,7 @@ const EquityJobs = () => {
             <Image
               width={120}
               height={40}
-              src={`assets/${index + 1}.svg`}
+              src={`assets/logos/${index + 1}.svg`}
               alt="other company logo"
             />
             <p>
