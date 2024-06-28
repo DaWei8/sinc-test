@@ -28,7 +28,7 @@ const sectionData = [
 
 const HeroSection = () => {
   return (
-    <div className=" flex w-[100%] items-center justify-center max-h-[500px] overflow-scroll ">
+    <div className=" flex w-[100%] max-sm:max-w-[100dvw] items-center justify-center max-h-[500px] lg:overflow-scroll ">
       <CarouselComponent
         autoSlide
         autoSlideInterval={3000}
@@ -36,13 +36,13 @@ const HeroSection = () => {
         items={sectionData.map((content, index) => (
           <div
             key={index}
-            className=" flex w-full items-center justify-center "
+            className=" flex w-full items-center justify-center max-sm:w-[90dvw] "
           >
-            <div className=" lg:w-[50%] lg:pl-[120px] py-[80px] ">
+            <div className=" lg:w-[50%]  lg:pl-[120px] py-[80px] ">
               <div className="flex flex-col gap-11 ">
                 <div className=" flex flex-col gap-3 max-w-[490px] w-full ">
                   <h4 className=" text-[24px] font-semibold ">
-                    {content.heading}{" "}
+                    {content.heading}
                   </h4>
                   <p>{content.details}</p>
                   <button className=" w-full max-w-[190px] h-12 px-[30px] font-medium  text-white items-center justify-center rounded-[24px] bg-[#212121]  ">
